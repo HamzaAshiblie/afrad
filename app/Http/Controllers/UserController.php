@@ -9,9 +9,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class UserController extends BaseController
+class UserController extends Controller
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
     public function signIn(Request $request)
     {
         $this->validate($request, [
