@@ -37,7 +37,7 @@ Route::get('/statement/{cat_id}',[
     'uses' => 'StatementController@getStatementByCat',
     'as' => 'statement'
 ]);
-Route::get('/statement',[
+/*Route::get('/statement',[
     'uses' => 'StatementController@getStatement',
-    'as' => 'statementa'
-]);
+    'as' => 'statement'
+]);*/
