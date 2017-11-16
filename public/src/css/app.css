@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'DroidKufi';
+    src: url('../fonts/DroidKufi/DroidKufi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+html,
+body {
+
+    font-family: "DroidKufi" !important;
+}
+nav.navbar{
+    font-size:12px;
+}
+nav.navbar:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.form-control{
+    -webkit-border-radius:1px;
+    -moz-border-radius:1px;
+    border-radius:1px;
+    width: 98%;
+}
+.div-hide{
+    display: none;
+}
+.ErrorRed{
+    color: red;
+}
+html, body {
+    min-height: 2000px;
+}
