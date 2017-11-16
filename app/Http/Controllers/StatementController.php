@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Statement;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
@@ -22,7 +23,8 @@ class StatementController extends Controller
     public function getStatementByCat($cat_id)
     {
         $statements = Statement::where('cat_id', $cat_id)->get();
-        return view('statement',['statements'=> $statements]);
+        $category = Category::where('id', $cat_id)->first();
+        return view('statement',['statements'=> $statements, 'category' => $category]);
     }
     public function addCategory(Request $request)
     {

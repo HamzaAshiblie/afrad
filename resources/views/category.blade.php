@@ -44,7 +44,7 @@
                                         </button>
                                         <ul class="dropdown-menu">
                                             <li><a type="button" data-toggle="modal" id="edit-category-modal-btn" data-categoryid="{{$category->id}}"> <i class="glyphicon glyphicon-edit"></i> تعديل</a></li>
-                                            <li><a type="button" data-toggle="modal" id="" href="{{route('statement', ['cat_id'=>$category->id])}}"> <i class="glyphicon glyphicon-edit"></i> البنود</a></li>
+                                            <li><a type="button" data-toggle="modal" id="" href="{{ route('statement', ['cat_id'=>$category->id])}}"> <i class="glyphicon glyphicon-edit"></i> البنود</a></li>
                                             <li><a type="button" data-toggle="modal" data-categoryid="{{$category->id}}" data-target="#removeCategoriesModal" id="remove-category-modal-btn" onclick=""> <i class="glyphicon glyphicon-trash"></i> حذف</a></li>
                                         </ul>
                                     </div>

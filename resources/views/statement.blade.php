@@ -19,7 +19,7 @@
                         <button class="btn btn-default" id="add-statement-modal-btn"> <i class="glyphicon glyphicon-plus-sign"></i> إضافة بند </button>
                     </div> <!-- /div-action -->
 
-                    <?=$_GET['cat_id']?>
+                    {{ $category->id }}
                     <table class="table" id="statements-table">
                         <thead>
                         <tr>
